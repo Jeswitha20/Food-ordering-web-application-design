@@ -1,4 +1,4 @@
-# Food Ordering 
+# Food Ordering web application
 
 ## Stack
 - Backend: Spring Boot (Java, Maven), MySQL, Spring Security + JWT (access token only), JavaMailSender (HTML template)
