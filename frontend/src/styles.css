@@ -1,0 +1,297 @@
+/* Global layout & typography */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: #f6f7fb;
+  color: #111827;
+}
+
+a {
+  color: inherit;
+}
+
+.app-shell {
+  min-height: 100vh;
+  background: radial-gradient(circle at top, rgba(252, 128, 25, 0.14) 0, #f6f7fb 55%);
+}
+
+.page {
+  max-width: 1024px;
+  margin: 20px auto;
+  padding: 0 16px 32px;
+}
+
+.page-title {
+  margin: 0 0 16px;
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.muted {
+  color: #6b7280;
+  font-size: 13px;
+}
+
+/* Cards & surfaces */
+.card {
+  border-radius: 18px;
+  background: #ffffff;
+  box-shadow: 0 14px 45px rgba(15, 23, 42, 0.06);
+  padding: 16px 18px;
+}
+
+.card--soft {
+  border-radius: 16px;
+  background: #ffffff;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.04);
+}
+
+.grid {
+  display: grid;
+  gap: 14px;
+}
+
+/* Inputs */
+input,
+textarea {
+  font-family: inherit;
+  font-size: 14px;
+  padding: 10px 12px;
+  border-radius: 999px;
+  border: 1px solid #e5e7eb;
+  outline: none;
+  background: #f9fafb;
+}
+
+textarea {
+  border-radius: 14px;
+  resize: vertical;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #fb6d3a;
+  background: #ffffff;
+  box-shadow: 0 0 0 1px rgba(251, 113, 133, 0.25);
+}
+
+/* Buttons */
+button {
+  font-family: inherit;
+  font-size: 14px;
+  padding: 9px 16px;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.08s ease, box-shadow 0.08s ease, background 0.08s ease;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #8719fc, #ff5d2c);
+  color: #ffffff;
+  box-shadow: 0 10px 20px rgba(248, 113, 113, 0.35);
+}
+
+.btn-primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 14px 30px rgba(248, 113, 113, 0.4);
+}
+
+.btn-ghost {
+  background: transparent;
+  color: #374151;
+}
+
+.btn-secondary {
+  background: #aacbef;
+  color: #111827;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 10px 20px rgba(15, 23, 42, 0.04);
+}
+
+.btn-secondary:hover {
+  background: #fff7f0;
+  border-color: rgba(252, 128, 25, 0.35);
+}
+
+.btn-danger {
+  background: #ef4444;
+  color: #ffffff;
+}
+
+button:disabled {
+  opacity: 0.75;
+  cursor: default;
+  transform: none;
+  box-shadow: none;
+}
+
+/* Pills / badges */
+.pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.pill--success {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.pill--warning {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.pill--muted {
+  background: #e5e7eb;
+  color: #374151;
+}
+
+/* Simple “Zomato-like” restaurant card */
+.restaurant-card {
+  position: relative;
+  border-radius: 18px;
+  background: #ffffff;
+  box-shadow: 0 12px 35px rgba(15, 23, 42, 0.06);
+  transition: transform 0.08s ease, box-shadow 0.08s ease;
+}
+
+.restaurant-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.12);
+}
+
+.restaurant-card__title {
+  font-weight: 800;
+  font-size: 15px;
+  margin-top: 8px;
+}
+
+.restaurant-card__meta {
+  margin-top: 4px;
+  font-size: 13px;
+  color: #4b5563;
+}
+
+.restaurant-card__address {
+  margin-top: 8px;
+  font-size: 12px;
+  color: #9ca3af;
+}
+
+.restaurant-card__image-wrap {
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+  height: 130px;
+  background: #f3f4f6;
+}
+
+.restaurant-card__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Swiggy-like Hero (Home page only) */
+.home-hero {
+  width: 100%;
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, #ff6a00, #ff8c42);
+}
+
+.home-hero::before {
+  content: '';
+  position: absolute;
+  inset: -30px;
+  background-image: url('https://share.google/q0sQ48usWUhb1DFgo');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.22;
+  filter: saturate(1.1) contrast(1.05);
+  pointer-events: none;
+}
+
+.home-hero__inner {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 54px 16px 48px;
+  min-height: 360px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-heading {
+  margin: 0;
+  color: #ffffff;
+  font-size: 52px;
+  line-height: 1.05;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  font-family: Poppins, Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.hero-subtext {
+  margin: 14px 0 0;
+  color: rgba(255, 255, 255, 0.92);
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 760px;
+  font-family: Poppins, Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.hero-actions {
+  margin-top: 26px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.hero-btn {
+  padding: 12px 22px;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+@media (max-width: 640px) {
+  .home-hero__inner {
+    min-height: 320px;
+    padding: 44px 16px 38px;
+  }
+
+  .hero-heading {
+    font-size: 34px;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .hero-btn {
+    width: 100%;
+    max-width: 320px;
+  }
+}
+
+

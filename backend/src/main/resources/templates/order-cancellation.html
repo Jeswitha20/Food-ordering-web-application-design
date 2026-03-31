@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Order Cancelled</title>
+</head>
+<body style="margin:0;padding:0;background:#f6f7fb;font-family:Arial,Helvetica,sans-serif;">
+  <div style="max-width:640px;margin:0 auto;padding:24px;">
+    <div style="background:#ffffff;border-radius:14px;box-shadow:0 10px 30px rgba(0,0,0,0.06);overflow:hidden;">
+      <div style="padding:22px 24px;background:linear-gradient(135deg,#ef4444,#f97316);">
+        <h2 style="margin:0;color:#ffffff;font-size:20px;">Order Cancelled</h2>
+        <p style="margin:6px 0 0 0;color:rgba(255,255,255,0.9);font-size:13px;">
+          Hi ${userName},
+        </p>
+      </div>
+
+      <div style="padding:22px 24px;">
+        <h3 style="margin:0 0 8px 0;">We’ve cancelled your order.</h3>
+        <p style="margin:0 0 18px 0;color:#444;font-size:14px;line-height:1.5;">
+          Restaurant: <b>${restaurantName}</b><br/>
+          Order ID: <b>#${orderId}</b>
+        </p>
+
+        <div style="padding:14px 16px;background:#f8fafc;border-radius:12px;">
+          <p style="margin:0;color:#444;font-size:14px;">
+            Total Amount: <b>₹${totalAmount}</b>
+          </p>
+        </div>
+
+        <p style="margin:16px 0 0 0;color:#666;font-size:12.5px;line-height:1.5;">
+          If you have any questions, contact support.
+        </p>
+      </div>
+
+      <div style="padding:16px 24px;background:#ffffff;border-top:1px solid #eef0f5;">
+        <p style="margin:0;color:#999;font-size:12px;">Food Ordering Team</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+

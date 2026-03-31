@@ -1,0 +1,14 @@
+package com.hcl.foodordering.exception;
+
+import org.springframework.http.HttpStatus;
+
+public class UnauthorizedException extends ApiException {
+    public UnauthorizedException(String code, String message) {
+        super(HttpStatus.UNAUTHORIZED, code, message);
+    }
+
+    public UnauthorizedException(String message) {
+        super(HttpStatus.UNAUTHORIZED, "UNAUTHORIZED", message);
+    }
+}
+
