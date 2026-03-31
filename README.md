@@ -32,17 +32,20 @@ The backend exposes:
 Frontend default runs on `http://localhost:5173` and proxies `/api` to `http://localhost:8080`.
 <img width="1910" height="885" alt="Screenshot 2026-03-31 172309" src="https://github.com/user-attachments/assets/2840183c-c618-4a89-97d2-f55e1034f0c8" />
 
-<img width="1898" height="895" alt="Screenshot 2026-03-31 172257" src="https://github.com/user-attachments/assets/761bbefb-32a1-4b95-a4de-ccd8956d5739" />
+<img width="1478" height="966" alt="image" src="https://github.com/user-attachments/assets/e4fcdccf-a964-4531-883c-0a6cf532aaab" />
 
-<img width="1912" height="896" alt="Screenshot 2026-03-31 172358" src="https://github.com/user-attachments/assets/93ec31da-bd3c-40a6-b731-a3f40bc986ad" />
+<img width="1500" height="958" alt="image" src="https://github.com/user-attachments/assets/79d86236-ecde-4b1f-a1be-baa94022852e" />
 
-<img width="1407" height="888" alt="Screenshot 2026-03-31 172423" src="https://github.com/user-attachments/assets/d7896b6e-fd6f-40e9-9d8f-b4a634ef0ca1" />
+<img width="1480" height="915" alt="image" src="https://github.com/user-attachments/assets/5337129a-3994-4cc5-a170-584c9c9ec9cd" />
 
-<img width="1419" height="491" alt="Screenshot 2026-03-31 172444" src="https://github.com/user-attachments/assets/34925e98-a703-4614-b099-5eb96fcbf500" />
+<img width="1485" height="954" alt="image" src="https://github.com/user-attachments/assets/473bee17-d95d-45fd-b024-15b200ad06a8" />
 
-<img width="1422" height="891" alt="Screenshot 2026-03-31 172453" src="https://github.com/user-attachments/assets/cd5a277a-482b-4ef2-9916-07ba5d877110" />
+<img width="926" height="532" alt="image" src="https://github.com/user-attachments/assets/82c951dc-de76-40a2-b63c-b6442fc85b09" />
 
-<img width="922" height="514" alt="Screenshot 2026-03-31 172532" src="https://github.com/user-attachments/assets/3d85d8f1-1710-41aa-a8c5-ad170c78d1d6" />
+
+
+
+
 
 
 
